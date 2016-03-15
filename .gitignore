@@ -5,8 +5,8 @@
 .mtj.tmp/
 
 
-.out/*
-.target/*
+out/
+target/
 # Package Files #
 *.jar
 *.war
