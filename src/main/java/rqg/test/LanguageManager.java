@@ -1,24 +1,32 @@
 package rqg.test;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import org.apache.commons.codec.language.bm.Lang;
 import rqg.xml.Resources;
 import rqg.xml.XmlString;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.*;
 import javax.xml.bind.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by rqg on 3/10/16.
  */
+
 public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
 
+    public Platform platform ;
 
     private TableModelListener modelListener;
 
@@ -55,6 +63,11 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
     private Resources chineseResourse;
     private Resources englishResourse;
 
+    private JRadioButton radioButtonAndroid = new JRadioButton("Android");
+    private JRadioButton radioButtoniOS = new JRadioButton("iOS");
+    private ButtonGroup platformButtonGroup = new ButtonGroup();
+
+
     private JCheckBox jCheckBox = new JCheckBox();
 
     private FilePanel chineseFilePanel = new FilePanel("Chinese", CHINESE, this);
@@ -79,15 +92,41 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
     }
 
     private void initView() {
-
-
         BorderLayout borderLayout = new BorderLayout();
         setLayout(borderLayout);
-
 
         JPanel leftPanel = new JPanel();
 
         leftPanel.setLayout(new GridLayout(6, 1));
+
+        JPanel platformPanel = new JPanel();
+        platformPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        platformPanel.setBorder(BorderFactory.createTitledBorder("Platform"));
+        radioButtonAndroid.setSelected(true);
+        platform = Platform.Android;
+
+        radioButtonAndroid.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                platform = Platform.Android;
+                chineseFilePanel.platform = Platform.Android;
+                englishFilePanel.platform = Platform.Android;
+            }
+        });
+
+        radioButtoniOS.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                platform = Platform.iOS;
+                chineseFilePanel.platform = Platform.iOS;
+                englishFilePanel.platform = Platform.iOS;
+            }
+        });
+
+        platformButtonGroup.add(radioButtonAndroid);
+        platformButtonGroup.add(radioButtoniOS);
+        platformPanel.add(radioButtonAndroid);
+        platformPanel.add(radioButtoniOS);
+
+        leftPanel.add(platformPanel);
 
         leftPanel.add(chineseFilePanel);
         leftPanel.add(englishFilePanel);
@@ -283,25 +322,20 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
 
 
     private void handleChineseFile(File file) {
-        JAXBContext jaxbContext = null;
-        try {
-            jaxbContext = JAXBContext.newInstance(Resources.class);
-            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            Resources resources = (Resources) jaxbUnmarshaller.unmarshal(file);
+        if(platform == Platform.Android) {
+            handleChinexeXMLFile(file);
+        } else {
+            handleChineseStringsFile(file);
 
-
-            chineseResourse = resources;
-
-
-            englishFilePanel.setEnabled(true);
-
-            initChineseData();
-            mLanguageTable.addNotify();
-
-        } catch (JAXBException e) {
-            e.printStackTrace();
         }
+    }
 
+    private void handleEnglishFile(File file) {
+        if (platform == Platform.Android) {
+            handleEnglishXMLFile(file);
+        } else {
+            handleEnglishStringsFile(file);
+        }
     }
 
 
@@ -354,12 +388,10 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
                 }
             }
         }
-
-
     }
 
 
-    private void exportChinese() {
+    private void exportChineseXML() {
 
         if (completeArray == null)
             return;
@@ -407,7 +439,7 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
         }
     }
 
-    private void exportEnglish() {
+    private void exportEnglishXML() {
 
         if (completeArray == null)
             return;
@@ -456,7 +488,148 @@ public class LanguageManager extends JFrame implements FilePanel.OnFileLoaded {
         }
     }
 
-    private void handleEnglishFile(File file) {
+    private void exportStringsForiOS(boolean isChinese) {
+
+        if (completeArray == null)
+            return;
+
+        JFileChooser jfc = new JFileChooser();
+        jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+
+        String fileName = isChinese ? "chinese.Strings" : "english.Strings";
+        jfc.setSelectedFile(new File(fileName));
+        int retval = jfc.showSaveDialog(this);//显示“保存文件”对话框
+        if (retval == JFileChooser.APPROVE_OPTION) {
+            File file = jfc.getSelectedFile();
+            try {
+                if(!file.exists()){
+                    file.createNewFile();
+                }
+                FileWriter fw = new FileWriter(file);
+                StringBuffer buffer = new StringBuffer();
+                for (Language language: completeArray) {
+                    if (isChinese) {
+                        buffer.append(language.toChineseStringForiOS());
+                    } else {
+                        buffer.append(language.toEnglishStringForiOS());
+                    }
+                }
+                fw.write(buffer.toString());
+                fw.close();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    private void exportChineseStrings() {
+        exportStringsForiOS(true);
+    }
+
+
+    private void exportEnglishStrings() {
+       exportStringsForiOS(false);
+    }
+
+    private void exportChinese() {
+        if (platform == Platform.Android) {
+            exportChineseXML();
+        } else {
+            exportChineseStrings();
+        }
+    }
+
+    private void exportEnglish() {
+        if (platform == Platform.Android) {
+            exportEnglishXML();
+        } else {
+            exportEnglishStrings();
+        }
+    }
+
+
+    private void handleChineseStringsFile(File file) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String temp = null;
+            ArrayList<Language> list = new ArrayList<Language>();
+            while ((temp = br.readLine()) != null) {
+                if (temp.trim().startsWith("\"")){
+                    String[] kv = temp.split("=");
+                    if (kv.length == 2) {
+                        String key = kv[0].trim();
+                        key = key.substring(1, key.length() - 1);
+                        String value = kv[1].trim();
+                        value = value.substring(1, value.length() - 2);
+                        Language language = new Language();
+                        language.setKey(key);
+                        language.setChinese(value);
+                        list.add(language);
+                    }
+                }
+            }
+            languageArray = list.toArray(new Language[list.size()]);
+            completeArray = languageArray;
+            mLanguageTable.addNotify();
+
+            englishFilePanel.setEnabled(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleEnglishStringsFile(File file) {
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String temp = null;
+            ArrayList<Language> list = new ArrayList<Language>();
+            while ((temp = br.readLine()) != null) {
+                if (temp.trim().startsWith("\"")){
+                    String[] kv = temp.split("=");
+                    if (kv.length == 2) {
+                        String key = kv[0].trim();
+                        key = key.substring(1, key.length() - 1);
+                        String value = kv[1].trim();
+                        value = value.substring(1, value.length() - 2);
+                        for (Language aLanguageArray : languageArray) {
+                            if (aLanguageArray.getKey().equals(key)) {
+                                aLanguageArray.setEnglish(value);
+                            }
+                        }
+                    }
+                }
+            }
+            mLanguageTable.addNotify();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleChinexeXMLFile(File file) {
+        JAXBContext jaxbContext = null;
+        try {
+            jaxbContext = JAXBContext.newInstance(Resources.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            Resources resources = (Resources) jaxbUnmarshaller.unmarshal(file);
+
+
+            chineseResourse = resources;
+
+
+            englishFilePanel.setEnabled(true);
+
+            initChineseData();
+            mLanguageTable.addNotify();
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleEnglishXMLFile(File file) {
         JAXBContext jaxbContext = null;
         try {
             jaxbContext = JAXBContext.newInstance(Resources.class);
