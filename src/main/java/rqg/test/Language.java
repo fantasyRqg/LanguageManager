@@ -43,6 +43,13 @@ public class Language {
         return "name = " + key + " c = " + chinese + " e = " + english;
     }
 
+    public String toChineseStringForiOS() {
+        return "\"" + key + "\"" + " = " + "\"" + chinese + "\";\n";
+    }
+
+    public String toEnglishStringForiOS() {
+        return "\"" + key + "\"" + " = " + "\"" + english+ "\";\n";
+    }
     /**
      * Returns true if the string is null or 0-length.
      *

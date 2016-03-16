@@ -6,14 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280f593e-8ba9-4fcb-b1f1-f20e20d9d0a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="280f593e-8ba9-4fcb-b1f1-f20e20d9d0a4" name="Default" comment="添加 iOS 语言文件支持">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/rqg/test/Platform.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java" afterPath="$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rqg/test/Language.java" afterPath="$PROJECT_DIR$/src/main/java/rqg/test/Language.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java" afterPath="$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java" />
     </list>
     <ignored path="Test.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,40 +38,43 @@
       <file leaf-file-name="LanguageManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.851852">
-              <caret line="388" column="51" selection-start-line="388" selection-start-column="51" selection-end-line="388" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="490" column="56" selection-start-line="490" selection-start-column="56" selection-end-line="490" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+                <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14002334">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resources.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rqg/xml/Resources.java">
+      <file leaf-file-name="FilePanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlString.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rqg/xml/XmlString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state vertical-scroll-proportion="1.0060121">
+              <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -77,17 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/Language.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="17" selection-start-line="38" selection-start-column="16" selection-end-line="48" selection-end-column="17" />
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -120,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/Criteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/LanguageEditor.form" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/xml/XmlString.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/xml/rqg/test/String.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/xml/String.java" />
@@ -129,12 +125,19 @@
         <option value="$PROJECT_DIR$/src/main/java/rqg/xml/XmlString.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/xml/ObjectFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/test/TextUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rqg/test/Language.java" />
         <option value="$PROJECT_DIR$/src/main/java/rqg/xml/Resources.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/rqg/test/Platform.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rqg/test/Language.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -163,10 +166,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
+    <option name="x" value="51" />
     <option name="y" value="23" />
-    <option name="width" value="2540" />
-    <option name="height" value="1413" />
+    <option name="width" value="1389" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -193,17 +196,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -216,10 +214,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rqg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rqg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,6 +308,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3494253" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -334,64 +412,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -411,6 +431,9 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
@@ -446,60 +469,23 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
       <envs />
-      <properties />
-      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
       <method />
     </configuration>
     <list size="3">
@@ -525,6 +511,9 @@
       <created>1457322938794</created>
       <option name="number" value="Default" />
       <updated>1457322938794</updated>
+      <workItem from="1458036252809" duration="992000" />
+      <workItem from="1458048695038" duration="9268000" />
+      <workItem from="1458087005428" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1458035744419</created>
@@ -535,32 +524,36 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10661000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="2540" height="1413" extended-state="0" />
-    <editor active="true" />
+    <frame x="51" y="23" width="1389" height="877" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33226582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.330053" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17834395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.335352" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25389755" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -576,7 +569,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="添加 iOS 语言文件支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 iOS 语言文件支持" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -593,6 +587,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -635,6 +642,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,6 +697,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -719,6 +752,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -761,6 +807,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,6 +862,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,6 +917,19 @@
           <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -903,19 +988,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="17" selection-start-line="38" selection-start-column="16" selection-end-line="48" selection-end-column="17" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/xml/Resources.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding />
+        <state vertical-scroll-proportion="0.422">
+          <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+          <folding>
+            <element signature="e#4996#4997#0" expanded="false" />
+            <element signature="e#5034#5035#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -927,36 +1021,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/Language.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/awt/FlowLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.851852">
-          <caret line="388" column="51" selection-start-line="388" selection-start-column="51" selection-end-line="388" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.332">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14002334">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/xml/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60777956">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/javax/swing/JTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2350081">
+          <caret line="701" column="16" selection-start-line="701" selection-start-column="16" selection-end-line="701" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/io/OutputStreamWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56239873">
+          <caret line="223" column="14" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/LanguageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="490" column="56" selection-start-line="490" selection-start-column="56" selection-end-line="490" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#LanguageManager#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initTable#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initChineseData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#initEnglishData#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChineseXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglishXML#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportStringsForiOS#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportChinese#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#exportEnglish#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChineseStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishStringsFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleChinexeXMLFile#0;class#LanguageManager#0" expanded="false" />
+            <element signature="method#handleEnglishXMLFile#0;class#LanguageManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rqg/test/FilePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0060121">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1020,6 +1164,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

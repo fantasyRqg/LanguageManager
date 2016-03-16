@@ -17,7 +17,7 @@ public class FilePanel extends JPanel {
     private int mType;
     JTextField filePath = new JTextField();
     JButton openFileButton = new JButton();
-
+    public Platform platform = Platform.Android;
 
     public FilePanel(String language, int fileType, OnFileLoaded listener) {
         setLayout(new FlowLayout(FlowLayout.LEADING));
@@ -38,7 +38,11 @@ public class FilePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser jfc = new JFileChooser();
                 jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
-                jfc.setFileFilter(new FileNameExtensionFilter(null, "xml"));
+                String fileSuffix = "xml";
+                if (platform == Platform.iOS) {
+                    fileSuffix = "strings";
+                }
+                jfc.setFileFilter(new FileNameExtensionFilter(null, fileSuffix));
                 jfc.showDialog(new JLabel(), "选择");
 
                 if (jfc.getSelectedFile() != null) {
